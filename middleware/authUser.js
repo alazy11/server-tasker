@@ -7,7 +7,7 @@ const authJWTUser = (req,res,next)=>{
    // let token = req.headers.authorization?.split(' ')[1];
    let token = req.cookies["token"] || req.headers.authorization?.split(' ')[1];
    let sender = req.query.sender;
-   // console.log("req.query.sender.........",sender)
+   console.log("req.token.........",token)
    // let token = req.cookies["token"];
    let user;
    let nextFun = next;
