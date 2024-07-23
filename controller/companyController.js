@@ -232,8 +232,8 @@ const login = (req, res, next) => {
                      secure: false,
                      httpOnly: true,
                      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
-                     domain: process.env.DOMAIN,
-                     path: "/en/company",
+                     // domain: process.env.DOMAIN,
+                     // path: "/en/company",
                      // path: "/en/company",
                      maxAge: 86400000,
                   });
@@ -242,8 +242,8 @@ const login = (req, res, next) => {
                      // secure: true,
                      // httpOnly: true,
                      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
-                     domain: process.env.DOMAIN,
-                     path: "/en/company",
+                     // domain: process.env.DOMAIN,
+                     // path: "/en/company",
                      maxAge: 86400000,
                   });
 
@@ -251,8 +251,8 @@ const login = (req, res, next) => {
                      // secure: true,
                      // httpOnly: true,
                      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
-                     domain: process.env.DOMAIN,
-                     path: "/en/company",
+                     // domain: process.env.DOMAIN,
+                     // path: "/en/company",
                      maxAge: 86400000,
                   });
 
