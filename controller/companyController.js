@@ -239,7 +239,7 @@ const login = (req, res, next) => {
                   });
 
                   res.cookie("roomId", result[0]["room_ID"], {
-                     // secure: true,
+                     secure: true,
                      // httpOnly: true,
                      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
                      // domain: process.env.DOMAIN,
@@ -248,7 +248,7 @@ const login = (req, res, next) => {
                   });
 
                   res.cookie("type", 'company', {
-                     // secure: true,
+                     secure: true,
                      // httpOnly: true,
                      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
                      // domain: process.env.DOMAIN,
